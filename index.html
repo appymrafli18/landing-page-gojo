@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google FOnts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Landing Page Gojo Satoru</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div class="container">
+        <div class="box-nav">
+          <div class="title">
+            <img src="./img/title.png" alt="title" />
+          </div>
+          <div class="text-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Character</a></li>
+              <li><a href="#">Episode & Info</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="hamburger" onclick="openSide()">
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="hamburger side" onclick="closeSide()">
+          <div class="bars-side"></div>
+        </div>
+        <div class="side-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Character</a></li>
+            <li><a href="#">Episode & Info</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Sidebar -->
+    </nav>
+    <!-- Nav -->
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-box">
+          <h1>
+            五条悟のキャラクター <br />
+            Gojo Satoru
+          </h1>
+        </div>
+        <div class="carousel">
+          <div class="carousel-title">
+            <h1>Populer Clips</h1>
+          </div>
+          <div class="carousel-movie swiper SwiperMe">
+            <div class="car swiper-wrapper">
+              <div class="card swiper-slide">
+                <img src="./img/gojo vs jogo.webp" alt="Movie One" width="250px" />
+                <button><i class="fas fa-play"></i></button>
+                <p>GOJO VS JOGO</p>
+              </div>
+              <div class="card swiper-slide">
+                <img src="./img/gojo vs sukuna.jpg" alt="Movie One" width="250px" />
+                <button><i class="fas fa-play"></i></button>
+                <p>GOJO VS SUKUNA</p>
+              </div>
+              <div class="card swiper-slide">
+                <img src="./img/gojo versi badas.jpg" alt="Movie One" width="250px" />
+                <button><i class="fas fa-play"></i></button>
+                <p>GOJO BADAS PART 1</p>
+              </div>
+              <div class="card swiper-slide">
+                <img src="./img/gojo versi badas 2.jpeg" alt="Movie One" width="250px" />
+                <button><i class="fas fa-play"></i></button>
+                <p>GOJO BADAS PART 2</p>
+              </div>
+              <div class="card swiper-slide">
+                <img src="./img/gojo ultimate.jpg" alt="Movie One" width="250px" />
+                <button><i class="fas fa-play"></i></button>
+                <p>GOJO ULTIMATE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero -->
+
+    <!-- Javascript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
